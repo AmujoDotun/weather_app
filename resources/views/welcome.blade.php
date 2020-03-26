@@ -12,7 +12,7 @@
 <body class="bg-blue-500" defer>
 
     <div id="app">
-        <example-component></example-component>
+      <example-component></example-component>
     </div>
     
 </body>
