@@ -7,12 +7,12 @@
     <title>Weather-App</title>
 
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/app.js"></script>
+    <script src="/js/app.js" defer></script>
 </head>
-<body class="bg-blue-500" defer>
+<body class="bg-blue-200">
 
-    <div id="app">
-      <example-component></example-component>
+    <div id="app" class="flex justify-center pt-16">
+      <weather-app></weather-app>
     </div>
     
 </body>
