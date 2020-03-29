@@ -1972,7 +1972,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   method: {
     fetchData: function fetchData() {
-      fetch("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/11257e7cdf9ba76e0adef0c016e6ab37/37.8267,-122.4233").then(function (response) {
+      fetch("/api/weather").then(function (response) {
         return response.json();
       }).then(function (data) {
         console.log(data);

@@ -63,7 +63,7 @@
         },
         method: {
             fetchData(){
-                fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/11257e7cdf9ba76e0adef0c016e6ab37/37.8267,-122.4233`)
+                fetch(`/api/weather`)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)

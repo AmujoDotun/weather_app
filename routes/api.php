@@ -1,5 +1,6 @@
 <?php
 
+use Zttp\Zttp;
 use Illuminate\Http\Request;
 
 /*
@@ -15,4 +16,10 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/weather', function(){
+    $response = Zttp::get('https://api.darksky.net/forecast/11257e7cdf9ba76e0adef0c016e6ab37/37.8267,-122.4233');
+
+    return $response->json();
 });
